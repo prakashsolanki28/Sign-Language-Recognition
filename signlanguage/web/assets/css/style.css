@@ -1,0 +1,137 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;1,200;1,300;1,400;1,500;1,600&display=swap');
+
+*{
+	font-family: 'Nunito', sans-serif;
+}
+
+.hero{
+	background: linear-gradient(rgba(0, 0, 0, 0.5),rgba(0, 0, 0, 0.5)),url("../images/bg-1.jpg");
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
+	height: 100vh;
+	width: 100%;
+}
+
+.text-gray{
+	color: rgba(0, 0, 0, 0.55) !important;
+}
+
+header .navbar-brand{
+	width: min-content;
+	font-size: 30px;
+	text-transform: uppercase;
+}
+
+.hero .navbar-nav{
+	background: rgba(0, 0, 0, 0.3);
+	align-items: center;
+	backdrop-filter: blur(2px);
+}
+
+.hero .navbar-nav li a{
+	color: #fff !important;
+	padding:8px 30px;
+}
+
+.hero .navbar-nav li{
+	transition: 0.4s;
+}
+
+.hero .navbar-nav li:hover{
+	background: rgba(0, 0, 0, 0.3);
+}
+
+.hero .navbar-nav li .btn{
+	border-radius: 0;
+}
+
+.hero-text{
+	height: 70%;
+	width: 100%;
+}
+
+
+.hero-text > div{
+	background: rgba(0, 0, 0, 0.5);
+	backdrop-filter: blur(2px);
+	padding: 35px;
+	text-align: center;
+	width: 30%;
+	border-radius: 8px;
+	transition: 0.5s;
+}
+
+.hero-text > div:hover
+{
+	transform: scale(1.1);
+}
+
+.hero-text > div .sign-img{
+	padding-bottom: 10px;
+	border-bottom: 1px solid #fff;
+	margin-bottom: 10px;
+}
+.hero-text  img{
+	width: 10%;
+}
+
+.hero-text > div span{
+	font-size: 25px;
+}
+
+.body-content {
+	min-height: calc(100vh - 42vh);
+}
+
+/* Transition property for smooth transformation of images */
+.img-hover-zoom img {
+	transition: transform .5s ease;
+}
+
+/* Zoom-n-rotate Container */
+.img-hover-zoom--zoom-n-rotate img {
+	transition: transform .5s ease-in-out;
+}
+
+/* The Transformation */
+.img-hover-zoom--zoom-n-rotate:hover img {
+	transform: scale(1.2);
+}
+
+@media(max-width:590px){
+	.hero-text > div{
+		width: 90%;
+	}
+	
+	.hero header .navbar-brand{
+		font-size: 15px;
+	}
+}
+
+@media(min-width:590px){
+	.hero-text > div{
+		width: 75%;
+	}
+	
+	.hero header .navbar-brand{
+		font-size: 17px;
+	}
+}
+
+@media(min-width:768px){
+	.hero header .navbar-brand{
+		font-size: 25px;
+	}
+}
+
+@media(min-width:992px){
+	.hero-text > div{
+		width: 45%;
+	}
+	
+	.hero header .navbar-brand{
+		font-size: 30px;
+	}
+}	
+
